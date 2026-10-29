@@ -1,0 +1,12 @@
+a) Hilo Alta Prioridad esta ejecutandose
+   Hilo baja Prioridad esta ejecutandose
+
+Se ejecuta asi porque estas indicandole al CPU el orden de prioridad de los hilos, en vez de que los hilos compitan por la concurencia.
+Aunque inicie primero el h2, este esperara al h1 ya que tiene la maxima prioridad.
+
+b) NEW, RUNNABLE, TERMINATED
+
+
+Ejercicio4:
+
+No funciona porque obligatoriamente para usar wait() y notifyAll() se nececita tener el monitor del objeto, usando syncronized se solucionaria el problema
